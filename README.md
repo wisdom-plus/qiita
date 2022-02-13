@@ -15,7 +15,7 @@
 7. Rewrite this README for your own with the badge below (Replace \<Your-ID\> and \<Your-Repository\>)
 
 ```
-![Qiita Sync](https://github.com/<Your-ID>/<Your-Repository>/actions/workflows/qiita_sync_check.yml/badge.svg)
+![Qiita Sync](https://github.com/tomoron/qiita/actions/workflows/qiita_sync_check.yml/badge.svg)
 ```
 
 Find more details in:
