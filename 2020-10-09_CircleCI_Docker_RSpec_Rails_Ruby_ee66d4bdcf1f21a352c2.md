@@ -4,18 +4,22 @@ tags:    CircleCI,Docker,RSpec,Rails,Ruby
 id:      ee66d4bdcf1f21a352c2
 private: false
 -->
+
 今回が初投稿ですので、ミスや分かりにくいなどは多めに見てください
 
-#環境
+# 環境
+
 ・Ruby 2.7.1
 ・Rails 6.0.2.1
 
-#やりたいこと
-・CircleCIでselnium dockerを利用してシステムテストを実行
-・system js: trueをCircleCIでも利用できるようにする
+# やりたいこと
 
-#docker-compose.yml
-システムスペックで利用するseleniumのイメージを取得し、depens_onで連携とportの指定も忘れずに
+・CircleCI で selnium docker を利用してシステムテストを実行
+・system js: true を CircleCI でも利用できるようにする
+
+# docker-compose.yml
+
+システムスペックで利用する selenium のイメージを取得し 、depens_on で連携と port の指定も忘れずに
 
 ```docker:docker-compose.yml
 version: "3"
@@ -50,8 +54,9 @@ volumes:
     driver: local
 ```
 
-#database.ymlを修正
-このままではデータベースがｄｂコンテナが利用されないのでdatabase.ymlを修正します。
+# database.yml を修正
+
+このままではデータベースがｄｂコンテナが利用されないので database.yml を修正します。
 
 ```ruby:database.yml
 default: &default
@@ -77,14 +82,11 @@ production:
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
 ```
 
-`
-$ docker-compose build
-$ docker-compose up
-$ docker-compose run web rake db:create
-`
+`$ docker-compose build $ docker-compose up $ docker-compose run web rake db:create`
 
-#spec/rails_helper
-テストに必要なGemを追加
+# spec/rails_helper
+
+テストに必要な Gem を追加
 
 ```ruby:Gemfile
 group :test do
@@ -93,7 +95,8 @@ group :test do
   gem 'rspec-rails'
 end
 ```
-systemテストはselenium dockerを使うようにrails_specを変更する
+
+system テストは selenium docker を使うように rails_spec を変更する
 
 ```ruby:rails_spec.rb
 Capybara.register_driver :remote_chrome do |app|
@@ -126,13 +129,16 @@ RSpec.configure do |config|
   end
 end
 ```
+
 これでローカルのシステムスペックは問題なく動くはずです
 
-#.circleci/config.yml
-CircleCIの設定です
-- run: mv ./config/database.yml.ci ./config/database.ymlでCI環境ではデータベースの設定を変更しています。
-name: chromeと設定しておかないと
-`Errno::EADDRINUSE:Address already in use - bind(2) for "172.27.0.3" port 4444`のエラーが発生する
+# .circleci/config.yml
+
+CircleCI の設定です
+
+- run: mv ./config/database.yml.ci ./config/database.yml で CI 環境ではデータベースの設定を変更しています。
+  name: chrome と設定しておかないと
+  `Errno::EADDRINUSE:Address already in use - bind(2) for "172.27.0.3" port 4444`のエラーが発生する
 
 ```config.yml
 version: 2.1
@@ -187,8 +193,9 @@ jobs:
           destination: test-results
 ```
 
-これでCircleCIでのrspec systemテストが正常に動くはずです
+これで CircleCI での rspec system テストが正常に動くはずです
 
-#参考
-・[Rails on DockerでRSpecのSystem testをSelenium Dockerを使ってやってみた。](https://qiita.com/at-946/items/e96eaf3f91a39d180eb3)
-・[既存のRails6アプリをDocker化しつつCircleCIでシステムスペックも実行できる環境を作る](https://qiita.com/kenz-dev/items/e3d970b59bf106cab19e)
+# 参考
+
+・[Rails on Docker で RSpec の System test を Selenium Docker を使ってやってみた。](https://qiita.com/at-946/items/e96eaf3f91a39d180eb3)
+・[既存の Rails6 アプリを Docker 化しつつ CircleCI でシステムスペックも実行できる環境を作る](https://qiita.com/kenz-dev/items/e3d970b59bf106cab19e)

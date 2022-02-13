@@ -4,13 +4,16 @@ tags:    Rails,Rails7.0,foreman
 id:      b6fae1c393baf5431025
 private: false
 -->
-#前提
+
+# 前提
+
 Rails 7.0.1
 Ruby 2.7.2
 docker 20.10.11
 
-###発生したエラー
-rails new -j esbuild で作成した後にサーバーを起動させる際にyarn buildとyarn build:cssがエラーが出てバンドルされない状態になってしまう。
+### 発生したエラー
+
+rails new -j esbuild で作成した後にサーバーを起動させる際に yarn build と yarn build:css がエラーが出てバンドルされない状態になってしまう。
 
 ```console:console
 ~/rails(master) $ bin/dev
@@ -29,8 +32,9 @@ rails new -j esbuild で作成した後にサーバーを起動させる際にya
 20:59:28 web.1  | terminated by SIGTERM
 ```
 
-#本文
-bin/devコマンドでサーバーを起動させるとforemanがインストールされ、プロジェクトディレクトリ直下にあるProcfile.devが実行されます
+# 本文
+
+bin/dev コマンドでサーバーを起動させると foreman がインストールされ、プロジェクトディレクトリ直下にある Procfile.dev が実行されます
 
 ```bash:bin/dev
 #!/usr/bin/env bash
@@ -43,16 +47,18 @@ fi
 foreman start -f Procfile.dev
 
 ```
-サーバーの起動と別プロセスでjsとcssのバンドルが行われ、yarnのコマンド使用して実行されています。
+
+サーバーの起動と別プロセスで js と css のバンドルが行われ、yarn のコマンド使用して実行されています。
 
 ```bash:Prodfile.dev
 web: bin/rails s -b '0.0.0.0' -p 3000
 js: yarn build --watch
 css: yarn build:css --watch
 ```
-エラー文ではerror Command "build" not found　と出ているのでpackage.jsonでコマンドが設定されていないことでエラーが出ています。
+
+エラー文では error Command "build" not found 　と出ているので package.json でコマンドが設定されていないことでエラーが出ています。
 コマンドを手動で追加します。
-今回はcssをBootstrapを利用してますので、他のcssを利用している場合はコマンドを各自書き換えてください
+今回は css を Bootstrap を利用してますので、他の css を利用している場合はコマンドを各自書き換えてください
 
 ```json:package.json
 {
@@ -76,9 +82,10 @@ css: yarn build:css --watch
 }
 
 ```
-これによってサーバー起動時にbin/devを利用することでjsとcssのバンドルをやってくれるようになります。
 
+これによってサーバー起動時に bin/dev を利用することで js と css のバンドルをやってくれるようになります。
 
-#まとめ
-railｓ6の時のようにちょっとだけファイルの変更があったとしても、ほんの数秒でバンドルをしてくれるのでDXがめちゃくちゃいいです。
+# まとめ
+
+rail ｓ 6 の時のようにちょっとだけファイルの変更があったとしても、ほんの数秒でバンドルをしてくれるので DX がめちゃくちゃいいです。
 色々と変更点が多いのでいきなりバージョンを上げるのはもう少し待ったほうが良さそうです。

@@ -4,22 +4,27 @@ tags:    Rails,Ruby,bullet
 id:      b8ab3e417ef1d584dd1c
 private: false
 -->
-#初めに
-Railsのviewの表示速度の低下理由として、partialの使いすぎやN+1問題があります。
-このN+1問題を検知するgemとして、有名なのがbulletです
-ただし、全てのN+1を検知してくるわけではありせん
 
-###本記事について
-bulletで検知できないN+1が発生した時の対処法を僕なりに書いた記事になっております。
+# 初めに
+
+Rails の view の表示速度の低下理由として、partial の使いすぎや N+1 問題があります。
+この N+1 問題を検知する gem として、有名なのが bullet です
+ただし、全ての N+1 を検知してくるわけではありせん
+
+### 本記事について
+
+bullet で検知できない N+1 が発生した時の対処法を僕なりに書いた記事になっております。
 間違ったことなどがあれば、ご指摘ください。
 
-#本文
-###モデルの定義
+# 本文
+
+### モデルの定義
+
 まずは、モデルを定義します。
-コーヒー豆(bean)とレビュー(review)が1対多で関連付けされています。
-beanにはコーヒー豆の名前と国、説明のカラムが存在しています。
-reviewにはレビュー内容と香り・甘味・苦味・コク・酸味のカラムが設定されています
-香り・甘味・苦味・コク・酸味は1から５の数字で評価していただく形になっています。
+コーヒー豆(bean)とレビュー(review)が 1 対多で関連付けされています。
+bean にはコーヒー豆の名前と国、説明のカラムが存在しています。
+review にはレビュー内容と香り・甘味・苦味・コク・酸味のカラムが設定されています
+香り・甘味・苦味・コク・酸味は 1 から５の数字で評価していただく形になっています。
 
 ```ruby:bean.rb
 # Table name: beans
@@ -35,11 +40,11 @@ class Bean < ApplicationsRecord
   has_many :reviews
 
   def evaluation_average
-    evaluation = [:acidity,:bitter,:flavor,:rich,:sweet] 
+    evaluation = [:acidity,:bitter,:flavor,:rich,:sweet]
     evaluation.map do |e|
       review.average(e)
     end
-    
+
   end
 
 end
@@ -49,25 +54,36 @@ end
 `ruby:review.rb
 
 # Table name: reviews
+
 #
-#  id                :bigint           not null, primary key
-#  content           :text(65535)      not null
-#  acidity           :integer
-#  bitter            :integer
-#  flavor            :integer
-#  rich              :integer
-#  sweet             :integer
-#  created_at        :datetime         not null
-#  updated_at        :datetime         not null
-#  bean_id        :bigint
+
+# id :bigint not null, primary key
+
+# content :text(65535) not null
+
+# acidity :integer
+
+# bitter :integer
+
+# flavor :integer
+
+# rich :integer
+
+# sweet :integer
+
+# created_at :datetime not null
+
+# updated_at :datetime not null
+
+# bean_id :bigint
 
 class Review < ApplicationRecord
-  belongs_to :bean
+belongs_to :bean
 
 end
 `
 
-viewで香りなどの評価の平均を取ろうとすると、合計でクエリが５つ走ります。
+view で香りなどの評価の平均を取ろうとすると、合計でクエリが５つ走ります。
 
 ```sql:コンソール
 [1] pry(main)> Bean.find(1).evaluation_average
@@ -80,14 +96,11 @@ viewで香りなどの評価の平均を取ろうとすると、合計でクエ�
 
 ```
 
-###対処法
-selectメソッドのサブクエリを利用することで一つのSQLで対応することができます。
-今回はActiveRecord::Relationオブジェクトである必要がないのでpluckメソッドを利用しています。
-あと、レビューの関することなのでreviewモデルのメソッドとして定義します。
+### 対処法
 
-
-
-
+select メソッドのサブクエリを利用することで一つの SQL で対応することができます。
+今回は ActiveRecord::Relation オブジェクトである必要がないので pluck メソッドを利用しています。
+あと、レビューの関することなので review モデルのメソッドとして定義します。
 
 ```ruby:review.rb
 class Review < ApplicationRecord
@@ -106,11 +119,11 @@ end
 
 これにより一つのクエリで５つの平均が配列で受け取れます。
 
+# まとめ
 
-#まとめ
-そこまでviewの表示速度は変わりませんが、N+1がこれでなくなりました。
+そこまで view の表示速度は変わりませんが、N+1 がこれでなくなりました。
 これ以上にいい方法があるような気がしますがご指摘があれば、コメントでお願いします。
 
-###参考記事
+### 参考記事
 
-[Rails: Bulletで検出されないN+1クエリを解消する　- TechRacho](https://techracho.bpsinc.jp/yusiro/2019_12_24/85407)
+[Rails: Bullet で検出されない N+1 クエリを解消する　- TechRacho](https://techracho.bpsinc.jp/yusiro/2019_12_24/85407)
