@@ -1,8 +1,6 @@
 <!--
 title:   【Rspec】Rails system_specでのcheckboxのテストの仕方
 tags:    RSpec,Rails,checkbox,system_spec
-id:      6ad0585b832d80e03c05
-private: false
 -->
 
 # はじめに
