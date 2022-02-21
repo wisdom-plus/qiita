@@ -28,7 +28,7 @@ checkbox のラベルをクリックすることでチェックが入るよう�
 
 ![login_form_image](./images/localhost_3000_users_sign_up.png)
 
-## 　 ソースコード
+## ソースコード
 
 ```slim:app/views/devis/registrations/new.html.slim
 .ui.container
@@ -112,7 +112,7 @@ checkbox のラベルをクリックすることでチェックが入るよう�
 
 ```
 
-##
+## spec の書き方
 
 find でクラスを指定してクリックをします。
 このようにする事で、リンクを作動させずにチェックを入れることができます。
