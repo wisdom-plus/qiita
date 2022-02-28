@@ -1,6 +1,7 @@
 <!--
 title:【Rails】Active Jobのテストの書き方
 tags: Rails,Rspec,Active Job,system_spec
+private: false
 -->
 
 # 初めに
