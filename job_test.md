@@ -1,6 +1,6 @@
 <!--
-title: 【Rails】Active Jobのテストの書き方
-tags:　Rails,Rspec,Active Job,system_spec
+title:【Rails】Active Jobのテストの書き方
+tags: Rails,Rspec,Active Job,system_spec
 -->
 
 # 初めに
