@@ -430,6 +430,6 @@ trailingComma: "all"
 
 # 参考
 
-下記の書籍を読んで学べば、React の事は完全に理解できると思ういます。
+下記の書籍を読んで学べば、React の事は完全に理解できると思います
 
 [りあクト](https://techbookfest.org/product/5436045076201472?productVariantID=6240785991204864)
