@@ -4,7 +4,6 @@ tags:    RSpec,Rails,checkbox,system_spec
 id:      6eb9455f9b738504a7b8
 private: false
 -->
-
 # はじめに
 
 ポートフォリオの作成時にログインページで、利用規約のチェックボックスを作成しました。
@@ -25,7 +24,7 @@ checkbox のラベルをクリックすることでチェックが入るよう�
 
 ## UI
 
-![login_form_image](./images/localhost_3000_users_sign_up.png)
+![login_form_image](images/localhost_3000_users_sign_up.png)
 
 ## ソースコード
 
