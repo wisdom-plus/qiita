@@ -5,8 +5,7 @@ id:      52b8cd9d8ca53f57834c
 private: false
 -->
 
-
-# 　初めに
+# 初めに
 
 Rails の便利な Gem で annotate というものがあります。
 データベースのスキーマと rotuer をファイルにコメントとして記述してくれる Gem です。
