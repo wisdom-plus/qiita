@@ -1,7 +1,10 @@
 <!--
-title: 【Rails7】annotateのrouterが動かない
-tags: Rails,Ruby,Gem,annotate
- -->
+title:   【Rails7】annotateのrouterが動かない
+tags:    Gem,Rails,Ruby,annotate
+id:      52b8cd9d8ca53f57834c
+private: false
+-->
+
 
 # 　初めに
 
