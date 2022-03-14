@@ -1,7 +1,10 @@
 <!--
-title: 【Rspec】turbo_streamを使っているときのrequest specの書き方
-tags: Rails7,Ruby,Rspec,request_spec
+title:   【Rspec】turbo_streamを使っているときのrequest specの書き方
+tags:    RSpec,Rails7,Ruby,request_spec
+id:      03ff4ea46b197a71d877
+private: false
 -->
+
 
 # はじめに
 
