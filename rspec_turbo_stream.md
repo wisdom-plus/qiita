@@ -1,7 +1,7 @@
 <!--
 title: 【Rspec】turbo_streamを使っているときのrequest specの書き方
 tags: Rails7, Ruby, Rspec, request_spec
- -->
+-->
 
 # はじめに
 
