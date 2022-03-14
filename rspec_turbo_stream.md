@@ -3,7 +3,7 @@ title: 【Rspec】turbo_streamを使っているときのrequest specの書き�
 tags: Rails7, Ruby, Rspec, request_spec
  -->
 
-# 　はじめに
+# はじめに
 
 Rails7 からはバリデーションの失敗時は `status: :unprocessable_entity` をつける必要があります。
 しかし request spec で書いている時、バリデーション失敗時でにリクエストのステータスが `200` で帰ってきてしまう
