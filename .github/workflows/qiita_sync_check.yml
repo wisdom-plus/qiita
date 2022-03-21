@@ -29,4 +29,4 @@ jobs:
           cat ./qiita_sync_output.txt
           [ ! -s "qiita_sync_output.txt" ] || exit 1
         env:
-          QIITA_ACCESS_TOKEN: ${{ secrets.QIITA_ACCESS_TOKEN2 }}
+          QIITA_ACCESS_TOKEN: ${{ secrets.QIITA_ACCESS_TOKEN}}
