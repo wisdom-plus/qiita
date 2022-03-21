@@ -5,7 +5,7 @@ tags: Githubactions,selenium,Rails,Rspec,system spec
 
 # 初めに
 
-Github actions で Rails の Rspec の system test を行なっている際に Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED が発生しました。
+Github actions で Rails の Rspec の system test を行なっている際に `Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED` が発生しました。
 
 ## やりたい事
 
