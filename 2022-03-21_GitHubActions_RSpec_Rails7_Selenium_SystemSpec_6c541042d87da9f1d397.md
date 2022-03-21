@@ -4,6 +4,7 @@ tags:    GitHubActions,RSpec,Rails7,Selenium,SystemSpec
 id:      6c541042d87da9f1d397
 private: false
 -->
+
 # 初めに
 
 Github actions で Rails の Rspec の system test を行なっている際に Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED が発生しました。
