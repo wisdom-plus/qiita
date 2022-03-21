@@ -24,7 +24,7 @@ jobs:
         run: |
           qiita_sync sync .
         env:
-          QIITA_ACCESS_TOKEN: ${{ secrets.QIITA_ACCESS_TOKEN2 }}
+          QIITA_ACCESS_TOKEN: ${{ secrets.QIITA_ACCESS_TOKEN }}
       - name: Git
         run: |
           find . -name '*.md' -not -path './.*' | xargs git add
