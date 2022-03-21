@@ -5,7 +5,6 @@ id:      03ff4ea46b197a71d877
 private: false
 -->
 
-
 # はじめに
 
 Rails7 からはバリデーションの失敗時は `status: :unprocessable_entity` をつける必要があります。
