@@ -1,7 +1,10 @@
 <!--
-title: 【Stimulus】targetがある時だけ関数を実行する方法
-tags: Rails,Javascript,Stimulus,turbo
+title:   【Stimulus】targetがある時だけ関数を実行する方法
+tags:    JavaScript,Rails,Stimulus,Turbo
+id:      33e3c6d01f529b8d1003
+private: false
 -->
+
 
 # はじめに
 
@@ -44,7 +47,7 @@ export default class extends Controller {
 ```html: target.html.erb
 <div data-controller='class'> <!--data-controllerがない起動しない -->
   <p>target</p>
-  <p class= 'remvoe-target' data-class-target='class'>remove-target</p>　
+  <p class= 'remvoe-target' data-class-target='class'>remove-target</p>
   <!--data-class-targetがDOMに接続されるとclassTargetConnectedが実行される -->
 </div>
 ```
