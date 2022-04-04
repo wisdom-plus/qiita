@@ -5,7 +5,6 @@ id:      de164fbf852709a6e116
 private: false
 -->
 
-
 # はじめに
 
 Docker Desktop の version を上げたら docker の CPU の使用率が 100%近くまで使ってしまうバグが発生しています。
