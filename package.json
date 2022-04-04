@@ -1,0 +1,13 @@
+{
+  "name": "qiita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tomoron/qiita.git",
+  "author": "tomoron <tomoron326@outlook.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "textlint": "^12.1.1",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+  }
+}
