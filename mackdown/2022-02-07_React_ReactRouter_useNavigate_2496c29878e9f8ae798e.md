@@ -86,7 +86,7 @@ const FlashMessage:FC = ()=>{
 
 ## v6 の時
 
-バージョンが 6 になると,useHistory を useNavigate に書き換える必要があります。
+バージョンが 6 になると、useHistory を useNavigate に書き換える必要があります。
 history.push を navigate に書き換えます。
 
 ```tsx:src/RootButton.tsx
