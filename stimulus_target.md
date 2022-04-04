@@ -5,7 +5,6 @@ id:      33e3c6d01f529b8d1003
 private: false
 -->
 
-
 # はじめに
 
 Rails7 で Javascript を利用するときは Stimulus を使うのがデフォルトになっています。
