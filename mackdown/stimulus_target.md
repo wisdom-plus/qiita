@@ -7,7 +7,7 @@ private: false
 
 # はじめに
 
-Rails7 で Javascript を利用するときは Stimulus を使うのがデフォルトになっています。
+Rails7 で JavaScript を利用するときは Stimulus を使うのがデフォルトになっています。
 
 特定のページで関数を実行する方法を書き残しておきます。
 
@@ -24,7 +24,7 @@ Rails7 で Javascript を利用するときは Stimulus を使うのがデフォ
 
 # 本文
 
-Stimulus のライフサイクルコールバックと呼ばれる特別なメソッドを使用すると目的を達成することができます。
+Stimulus のライフサイクルコールバックと呼ばれる特別なメソッドを使用すると目的を達成できます。
 
 `TargetConnected()`を利用する
 

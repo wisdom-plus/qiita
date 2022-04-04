@@ -45,7 +45,7 @@ class ImageurlUploader < CarrierWave::Uploader::Base
 end
 ```
 
-これで画像をリサイズすることができるようになります。
+これで画像をリサイズできるようになります。
 
 # resize_to_fit
 

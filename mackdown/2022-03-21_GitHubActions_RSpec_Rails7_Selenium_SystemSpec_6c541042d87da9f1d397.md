@@ -7,7 +7,7 @@ private: false
 
 # 初めに
 
-Github actions で Rails の Rspec の system test を行なっている際に Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED が発生しました。
+GitHub actions で Rails の Rspec の system test を行なっている際に Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED が発生しました。
 
 ## やりたい事
 
@@ -21,7 +21,7 @@ Github actions で Rails の Rspec の system test を行なっている際に S
 
 # workflow
 
-github actions 上で selenium docker を利用して、system spec を動かした際にエラーが発生
+GitHub actions 上で selenium docker を利用して、system spec を動かした際にエラーが発生
 
 `Selenium::WebDriver::Error::UnknownError:unknown error: net::ERR_NAME_NOT_RESOLVED`
 エラーメッセージに内容は名前が解消していないと出ています。
