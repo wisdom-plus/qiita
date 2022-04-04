@@ -25,7 +25,7 @@ private subnet 内に ecs インスタンスを作った場合 NAT gatway など
 
 # Rails
 
-aws 公式で aws-adk-rails gem がありますが、SES との接続は HTTPS を利用しているので vpc endpoint を利用して接続できません。ですので、VPC endpoint を利用して SES からメールを送信するには action_mailer の smtp 設定を行うことで通信することができます。
+aws 公式で aws-adk-rails gem がありますが、SES との接続は HTTPS を利用しているので vpc endpoint を利用して接続できません。ですので、VPC endpoint を利用して SES からメールを送信するには action_mailer の smtp 設定を行うことで通信できます。
 
 ```ruby:config/environments/production.rb
   config.action_mailer.default_url_options = { host: ENV['AWS_DOMAIN'] }

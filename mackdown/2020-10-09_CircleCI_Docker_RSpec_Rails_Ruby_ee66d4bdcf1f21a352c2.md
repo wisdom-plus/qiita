@@ -19,7 +19,7 @@ private: false
 
 # docker-compose.yml
 
-システムスペックで利用する selenium のイメージを取得し 、depens_on で連携と port の指定も忘れずに
+システムスペックで利用する selenium のイメージを取得し 、depens_on で連携と port の指定も忘れずに
 
 ```docker:docker-compose.yml
 version: "3"
