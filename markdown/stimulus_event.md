@@ -19,8 +19,8 @@ Stimulus-rails 1.0.4
 # 取得方法
 
 ボタンが４つあり特定のボタンをクリックした時だけ、アクションを起こしたい時があると思います。
-通常なら`data-target`を利用することで、javascript 側で要素を取得することができます。
-ですが、それが使えないときは`Stimulus`のメソッドの引数を利用することで取得することができます。
+通常なら`data-target`を利用することで、javascript 側で要素を取得できます。
+ですが、それが使えないときは`Stimulus`のメソッドの引数を利用することで取得できます。
 
 ## html
 
@@ -44,7 +44,7 @@ Stimulus-rails 1.0.4
 
 ## javascript
 
-メソッドの引数の`currentTarget`にクリックした要素が入っています
+メソッドの引数の`currentTarget`にクリックした要素が入っています。
 
 ```javascript:button_controller.js
 import { Controller} from '@hotwired/stimulus';
@@ -63,6 +63,6 @@ export default class extends Controller {
 
 # 参考
 
-やっぱり困った時は、公式サイトのリファレンスを見るのが一番です
+やっぱり困った時は、公式サイトのリファレンスを見るのが一番です。
 
 [公式サイト](https://stimulus.hotwired.dev/reference/actions)
