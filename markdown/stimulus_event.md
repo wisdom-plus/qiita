@@ -1,7 +1,10 @@
 <!--
-title: 【Stimulus】Stimulusをクリックした要素を取得する方法
-tags: Rails7,Stimulus,javascript
+title:   【Stimulus】Stimulusをクリックした要素を取得する方法
+tags:    JavaScript,Rails7,Stimulus
+id:      b29f272230fd7ec199ea
+private: false
 -->
+
 
 # はじめに
 
