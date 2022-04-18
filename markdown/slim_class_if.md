@@ -20,9 +20,6 @@ erb での後置 if の書き方は多くありましたが slim でのやり方
 こちらは erb での書き方です。
 
 ```html: if.html.erb
-
-
-
 <div class='btn-list'>
   <% if @result == true %>
     <%= link_to "Topへ", words_path,{class:'btn-bule'} %>
