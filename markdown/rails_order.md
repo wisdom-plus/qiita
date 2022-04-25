@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】レコードを配列の順番に並び替える
-tags: Rails,Ruby,ActiveRecord
+title:   【Rails】レコードを配列の順番に並び替える
+tags:    ActiveRecord,Rails,Ruby
+id:      d28d35c918fa4e63588f
+private: false
 -->
+
 
 # 初めに
 
