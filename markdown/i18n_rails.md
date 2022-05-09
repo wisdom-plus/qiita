@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】actionmeilerのsubjectをi18nで日本語化する
-tags: Rails,ruby,i18n
+title:   【Rails】actionmeilerのsubjectをi18nで日本語化する
+tags:    I18n,Rails,Ruby
+id:      ad8a33aac08010768dbe
+private: false
 -->
+
 
 # 初めに
 
