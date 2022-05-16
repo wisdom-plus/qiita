@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】Rails６でのjQueryを使うときのwebpackerの設定
-tags: Rails,javascript,webpacker,jquery
+title:   【Rails】Rails６でのjQueryを使うときのwebpackerの設定
+tags:    JavaScript,Rails,jQuery,webpacker
+id:      73a6efe8eddc74729fe1
+private: false
 -->
+
 
 # 初めに
 
