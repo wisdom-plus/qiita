@@ -25,7 +25,7 @@ group :test do
 end
 ```
 
-`simplecov`の設定を追加する
+`simplecov`の設定を追加する。
 
 ```ruby:spec/rails_helper.rb
 require 'spec_helper'
