@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】Railsでカバレッジを計測する
-tags: Rails,Ruby,simplecov
+title:   【Rails】Railsでカバレッジを計測する
+tags:    Rails,Ruby,SimpleCov
+id:      404725e23a5398dd921c
+private: false
 -->
+
 
 # 初めに
 
