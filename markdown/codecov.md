@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】Rspecのカバレッジをプルリクのコメントで表示する
-tags: Rails,Ruby,CircleCI,Codecov,simplecov
+title:   【Rails】Rspecのカバレッジをプルリクのコメントで表示する
+tags:    CircleCI,Rails,Ruby,SimpleCov,codecov
+id:      183abf1059ad5b2e860c
+private: false
 -->
+
 
 # 初めに
 
