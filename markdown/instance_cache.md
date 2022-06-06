@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】DBから最新データが取得されていない時の対処法
-tags: Rails,Ruby,ActiveRecord,cache
+title:   【Rails】DBから最新データが取得されていない時の対処法
+tags:    ActiveRecord,Cache,Rails,Ruby
+id:      e1347157eb6e16a7069b
+private: false
 -->
+
 
 # 初めに
 
