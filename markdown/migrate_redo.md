@@ -26,7 +26,7 @@ tags: Rails,Ruby,migrate
 
 2. その次に、`rails db:migrate:redo`を行い、バージョンを下げて後にもう一度上げてエラーが起きないか確認する。
 
-`rails db:migrate:redo`はバージョンを下げた後に上げてくれます。
+`rails db:migrate:redo`はマイグレーションのバージョンを下げた後に上げて元に戻します。
 
 # 参考
 
