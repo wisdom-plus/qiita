@@ -1,7 +1,10 @@
 <!--
-title:【Rails】マイグレーションのロールバックを確認すべし
-tags: Rails,Ruby,migrate
+title:   【Rails】マイグレーションのロールバックを確認すべし
+tags:    Rails,Ruby,migrate
+id:      3ff30afcdcbef0f57685
+private: false
 -->
+
 
 # 初めに
 
