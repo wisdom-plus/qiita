@@ -1,7 +1,10 @@
 <!--
-title: 【Linux】中級コマンド一覧
-tags: Linux,command,console
+title:   【Linux】中級コマンド一覧
+tags:    Linux,command,console
+id:      1fde05b2c9fae91b4311
+private: false
 -->
+
 
 # 初めに
 
