@@ -28,3 +28,42 @@ grep test /etc/password
 ```console
 less /usr/share/dict/words
 ```
+
+また、`grep`と`less`を組み合わせることをできます。
+
+```console
+grep ie /usr/share/dict/words | less
+```
+
+## pwd
+
+カレント・ワーキング・ディレクトリの名前を出力をします。
+
+```console
+$ pwd
+/Users/test
+```
+
+## diff
+
+二つのテキストファイルの差分を知ることができます。
+
+```console
+diff file1 file2
+```
+
+## file
+
+ファイル形式を表示します。
+
+```console
+file file
+```
+
+## find
+
+`dir`内にある`file`を探すことができます。
+
+```console
+find dir -name file -print
+```
