@@ -1,7 +1,10 @@
 <!--
-title:【Terraform】ECSの環境変数をSSMを利用して設定する
-tags: Rerraform,AWS,ECS,SSM
+title:   【Terraform】ECSの環境変数をSSMを利用して設定する
+tags:    AWS,ECS,Rerraform,SSM
+id:      8a387390079b8a56ad1e
+private: false
 -->
+
 
 # 初めに
 
