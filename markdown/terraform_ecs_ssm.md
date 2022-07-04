@@ -5,7 +5,6 @@ id:      8a387390079b8a56ad1e
 private: false
 -->
 
-
 # 初めに
 
 現在作成中のポートフォリオは、`Terraform`を利用して`AWS`にデプロイをしています。
