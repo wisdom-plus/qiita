@@ -1,7 +1,10 @@
 <!--
-title: 【Javascript】Javascriptのfetchの仕様の注意点
-tags: Javascript,Fetch,Error,Typescript
+title:   【Javascript】Javascriptのfetchの仕様の注意点
+tags:    JavaScript,TypeScript,error,fetch
+id:      7f67547a571749ea235b
+private: false
 -->
+
 
 # 初めに
 
