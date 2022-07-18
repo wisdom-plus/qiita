@@ -50,7 +50,7 @@ fetch(URL)
 
 ## Typescript 使用時の注意点
 
-レスポンスの`json`が `any`型もしくは `unknown`型になる
+レスポンスの`json`が `any`型もしくは `unknown`型になる。
 
 ```javascript
 fetch(URL)
