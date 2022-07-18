@@ -5,7 +5,7 @@ tags: Javascript,Fetch,Error,Typescript
 
 # 初めに
 
-React での開発中に、`fetch`の仕様がわからなくなったのでここに記載します。
+React での開発中に、`fetch`の仕様がわからなくなったのでここに忘備録を残しておきます。
 
 ## 環境
 
