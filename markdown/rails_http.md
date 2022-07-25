@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】外部APIを使う方法
-tags: Rails,HTTP,Responce,API
+title:   【Rails】外部APIを使う方法
+tags:    HTTP,Rails,Responce,api
+id:      9c146f46db180e9469d2
+private: false
 -->
+
 
 # 初めに
 
