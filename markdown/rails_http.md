@@ -5,7 +5,6 @@ id:      9c146f46db180e9469d2
 private: false
 -->
 
-
 # 初めに
 
 `Rails`で外部 API を利用するには、gem や`NET::HTTP`を使う方法がありますが、今回は`Ruby`にある`NET::HTTP`を使います。
