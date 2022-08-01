@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】importmap-railsの注意点
-tags: Rails,Rails7,Importmap.Javascript
+title:   【Rails】importmap-railsの注意点
+tags:    Importmap.Javascript,Rails,Rails7
+id:      af1c2aa655839e9c83e8
+private: false
 -->
+
 
 # 初めに
 
