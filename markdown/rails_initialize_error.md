@@ -5,7 +5,6 @@ id:      2807ab0fc622477378de
 private: false
 -->
 
-
 # 初めに
 
 Rails6 で Rspec を稼働させると`DEPRECATION WARNING`が出るので、それを解決します。
@@ -52,7 +51,7 @@ config/initializers から`Controllerクラス`などを呼び出しでエラー
 
 まずは、どのファイルから呼び出されているかを確認する必要があります。
 
-今回は`ApplicationHelper`に`pp caller_locations`でどこで呼び出されているかをコンソールに出力させます。
+今回は`ApplicationHelper`に`pp caller_locations`を使い、どのファイルで呼び出されているかをコンソールに出力させます。
 
 ```ruby:application_helper.rb
 module ApplicationHelper
