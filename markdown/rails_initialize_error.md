@@ -1,6 +1,6 @@
 <!--
 title:【Rails6】Initialization autoloaded the constants ApplicationHelper を解消する
-tags: Rails, Initialize, Zeitwerk
+tags: Rails,Ruby,Zeitwerk
 -->
 
 # 初めに
