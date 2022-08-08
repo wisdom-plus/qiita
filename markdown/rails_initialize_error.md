@@ -1,6 +1,6 @@
 <!--
-title:　【Rails6】DEPRECATION WARNINGを解消する
-tags: Rails, Error, Initialize, Zeitwerk
+title:【Rails6】Initialization autoloaded the constants ApplicationHelper を解消する
+tags: Rails, Initialize, Zeitwerk
 -->
 
 # 初めに
@@ -13,7 +13,7 @@ Rails6 で Rspec を稼働させると`DEPRECATION WARNING`が出るので、そ
 
 以下のエラーが発生しました。
 
-```ruby
+```console
 DEPRECATION WARNING: Initialization autoloaded the constants ApplicationHelper,DeviseHelper、ApplicationController、
 DeviseController、Devise::SessionsController、Devise::PasswordsController、Devise::UnlocksController、Devise::RegistrationsController、
 Devise::ConfirmationsController.
