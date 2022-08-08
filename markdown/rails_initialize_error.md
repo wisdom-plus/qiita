@@ -1,7 +1,10 @@
 <!--
-title:【Rails6】Initialization autoloaded the constants ApplicationHelper を解消する
-tags: Rails,Ruby,Zeitwerk
+title:   【Rails6】Initialization autoloaded the constants ApplicationHelper を解消する
+tags:    Rails,Ruby,Zeitwerk
+id:      2807ab0fc622477378de
+private: false
 -->
+
 
 # 初めに
 
