@@ -1,7 +1,10 @@
 <!--
-title: 【Rails】Javascriptバンドラーの第5の選択肢vite_rails
-tags: Rails,Javascript,Vite
+title:   【Rails】Javascriptバンドラーの第5の選択肢vite_rails
+tags:    JavaScript,Rails,vite
+id:      8b2f69f1a345446a1887
+private: false
 -->
+
 
 # 初めに
 
