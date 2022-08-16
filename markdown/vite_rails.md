@@ -9,11 +9,11 @@ private: false
 # 初めに
 
 `Rails7`からアセットパイプラインは`importmap` `esbuild` `webpack` `rollup`の四つの選択肢があります。
-ですが、新たなに`vite_rails`という選択肢をここで紹介させていただきます。
+ですが、新たに`vite_rails`という選択肢をここで紹介させていただきます。
 
 # なぜ vite_rails なのか
 
-- 開発サーバーは非常に高速に起動し、変更が即座に更新される。
+- 開発サーバーは非常に高速に起動し、変更が即座に更新される。(ホットリロード)
 - 基本的にデフォルトの設定で動作し、構成が簡単である
 - デプロイ時は`assets:precompile`でバンドルができる。
 - css や sass などもバンドルできる。
@@ -21,6 +21,7 @@ private: false
 # 導入方法
 
 `webpacker`からの移行する方法になります。
+
 `Gemfile`に`vite_rails`を追加します。
 
 ```Gemfile:Gemfile
