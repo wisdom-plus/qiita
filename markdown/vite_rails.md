@@ -5,10 +5,9 @@ id:      8b2f69f1a345446a1887
 private: false
 -->
 
-
 # 初めに
 
-`Rails7`からアセットパイプラインは`importmap` `esbuild` `webpack` `rollup`の四つの選択肢があります。
+`Rails7`からアセットパイプラインは`importmap` `esbuild` `webpack` `rollup`の 4 つの選択肢があります。
 ですが、新たに`vite_rails`という選択肢をここで紹介させていただきます。
 
 # なぜ vite_rails なのか
